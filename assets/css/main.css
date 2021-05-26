@@ -10224,14 +10224,213 @@ del {
 .image-wrap {
   position: relative;
 }
+.rotator h2.c-white {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.rotator a h2.c-white {
+     text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 18px;
+}
+.rotator h3.c-yell {
+    color: #ffe600;
+    text-align: center;
+    line-height: 15px;
+    font-size: 14px;
+    padding: 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.rotator h2.c-num {
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+.rotator h3.c-19 {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding:5px 0px 0px;
+    margin:15px 0 0px;
+}
+.rotator span.state{
+ font-size: 8px;
+    text-align: center;
+    font-weight: bold;
+   color:#fff;
+    text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.rotator h4.vmap {
+    font-size: 8px;
+    text-align: center;
+    color: #ffe600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.rotator {
+    position: absolute;
+    bottom: 210px;
+    left: 40px;
+    display: block;
+    z-index: 99999;
+    width: 0;
+}
 
+.rotator .back h2 {
+    text-align: center;
+    color: #fff;
+}
+.rotate-banner {
+ position: relative;
+
+}
+.rotator .closexInnerwrap {
+ bottom: 22px;
+ display: inline-block;
+ position: absolute;
+ left: 110px;
+ background: #4e4e4e;
+ padding: 5px;
+ border-radius: 50%;
+ width: 20px;
+cursor: pointer;
+}
+.rotator .closexInnerwrap img {
+ float: left;
+ display: inline-block;
+ width: 10px;
+}
+.rotator .Innerwrap a{text-decoration:none;}
+
+@keyframes spin-horizontal {
+ 0% {transform:rotateY(0deg);}
+ 13.33%, 23.32% {transform:rotateY(-90deg);}
+ 36.64%, 46.68% {transform:rotateY(-180deg);}
+ 70.01%, 75% {transform:rotateY(-270deg);}
+ 80%, 100%{transform:rotateY(-360deg);}
+}
+
+.rotator .addchartwrap {
+-webkit-perspective: 440px;
+-webkit-perspective-origin: 50% 110px;
+-moz-perspective: 440px;
+-moz-perspective-origin: 50% 110px;
+-ms-perspective: 440px;
+-ms-perspective-origin: 50%;
+perspective: 440px;
+perspective-origin: 50% 110px;
+}
+.rotator .Innerwrap {
+position: relative;
+width: 220px;
+margin: 0 auto;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transform-style: preserve-3d
+}
+#rotator .close {
+    cursor: pointer;
+    position: absolute;
+    top: 77%;
+    left: 120px;
+ }
+.rotator .Innerwrap div {
+   width: 110px;
+height: 110px;
+position: absolute;
+background: rgba(20, 59, 90, .65);
+border-radius:200px;
+color: #ffffff;
+overflow: hidden;
+}
+.rotator .addon div.back {
+text-align:center;
+transform: translateZ(-16px) rotateY(180deg);
+    background-image: linear-gradient(#581845, #900C3F);
+
+}
+.rotator .addon div.right {
+text-align:center;
+transform: rotateY(-284deg) translateX(55px);
+transform-origin: top right;
+    background-image: linear-gradient(#581845, #900C3F);
+}
+.rotator .addon div.left {
+text-align:center;
+transform: rotateY(270deg) translateX(-55px);
+transform-origin: center left;
+    background-image: linear-gradient(#581845, #900C3F);
+}
+.rotator .addon div.top {
+transform: rotateX(-90deg) translateY(-55px);
+transform-origin: top center;
+    background-image: linear-gradient(#581845, #900C3F);
+}
+.rotator .addon div.bottom {
+transform: rotateX(90deg) translateY(55px);
+transform-origin: bottom center;
+    background-image: linear-gradient(#581845, #900C3F);
+}
+.rotator .addon div.front {
+text-align:center;
+transform: translateZ(16px);
+    background-image: linear-gradient(#581845, #900C3F);
+}
+
+.rotator .addchartwrap.vertical .Innerwrap {
+margin: 100px auto;
+transform-origin: 55px 55px;
+animation: spin-horizontal 12s infinite;
+animation-timing-function: ease;
+}
+.rotator .addchartwrap.vertical .Innerwrap h2{
+   font-size:14px;
+   color:#ffffff;
+   margin-top: 25px;
+}
+.rotator .addchartwrap.vertical .Innerwrap .btn{
+   padding:8px 10px;
+   min-width:60% !important;
+}
+.rotator .Innerwrap div img {
+ width: 100px;
+border-radius: 50%;
+ transform: translate(-50%,-50%);
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ box-shadow: -1px 0px 5px #00000030;
+}
+.rotator .addchartwrap.vertical .Innerwrap:hover {
+-webkit-animation-play-state: paused;
+-moz-animation-play-state: paused;
+-o-animation-play-state: paused;
+animation-play-state: paused;
+cursor: pointer
+}
 .add-section {
-  width: 230px;
+  width: 300px;
   /* height: 45px; */
-  background: #ffffff;
+  background: #46FF33;
   position: absolute;
-  bottom: 115px;
-  left: 384px;
+  bottom: 25px;
+    left: 25px;
   padding: 20px;
   box-shadow: 0px 0px 9px rgb(0 0 0 / 60%);
 }
